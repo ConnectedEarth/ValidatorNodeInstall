@@ -748,7 +748,8 @@ EOF
 
     2. REGISTER YOUR NEWLY MINTED VALIDATOR IN THE AYA BLOCKCHAIN
 
-    All the necessary data and commands are saved in a file "commands.txt", the file can be located in <your home directory>/earthnode_installer/
+    Go to John Kelly's guide here https://nodebasewm.github.io/docs/tutorials/validatornodemanual/ and follow from Step 30.
+    All the necessary data and commands are saved in a file "commands.txt", the file can be located in earthnode_installer in your home directory 
 
 EOM
 )
