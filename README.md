@@ -46,5 +46,38 @@ For this script to work, a X11 server is necessary to be running on client machi
         unzip main.zip
         rm main.zip
         cd ValidatorNodeInstall-main/
+   
+5. Give execution permision to the file and then execute the file
 
+       chmod +x install_WM_sentry_v1.sh
+       ./install_WM_sentry_v1.sh
 
+6. **If you are getting an error "cant open display", try following on your remote server:**
+
+       sudo sysctl -w net.ipv6.conf.lo.disable_ipv6=0
+       exit
+       ssh <UserName>@xxx.xxx.xxx.xxx
+       cd SentryNodeInstall-main/
+       ./install_WM_Validator_v1.sh
+  Explanation: Xserver system needs IpV6 enabled on lo interface. I found it to be disabled by       default on Contabo virtual machines. This will lead to absence of .Xauthority file which will      inturn cause an error "cant open display".
+
+7. Once the installation is complete, check whether node is running fine or not.
+   This can be done in two ways:
+   
+   a.using the following command
+
+       sudo systemctl status cosmovisor.service
+   
+   b. By installing Ayaviw (Created and maintained by Nico Vervoben) 
+   
+        cd ~/
+        mkdir nodebase-tools 
+        cd nodebase-tools
+        wget -O ayaview.zip https://github.com/nodebasewm/download/blob/main/ayaview.zip?raw=true
+        unzip ayaview.zip
+        rm ayaview.zip
+       ./ayaview
+
+7. ***IMPORTANT***:Once Validaror node is installed, follow the steps written in the final screen of this installation process. In case you forgot to copy the steps, the steps are saved in cd ~/earthnode_installer/ folder of your home directory. The file name is "commands.txt". you will need those commands and data to register the validator node into the Aya blockchain.
+
+   
