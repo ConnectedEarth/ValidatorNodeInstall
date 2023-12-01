@@ -2,7 +2,7 @@
 
 
 #If you would like to see debug messagesm uncomment the following line
-set -x
+#set -x
 
 echo "Install dependencies....."
 
