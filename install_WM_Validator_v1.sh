@@ -730,6 +730,29 @@ EOF
 		public_key=$(ayad tendermint show-validator --home /"$aya_home/")
 		registration_data=$(cat "$aya_home/registration.json")
 
+		final_msg_screen=$(cat <<- EOM
+
+		CONGRATULATIONS!!!!!!
+
+		Your Validator node is now up and running. You can check the status of your validator node by using the following command:
+
+		"sudo systemctl status cosmovisor.service"
+
+		:-) FINAL STEPS YOU NEED TO MANUALLY (COPY THE COMMANDS BEFORE YOU HIT "OK"
+
+		1. INSTALL CHAIN FOLLOWER SERVICE
+
+		This can be done by going to WM Discord and download the Chainfollower service package from "public-testnet-announcements" channel. Download the package on your validator host. 
+
+		Detailed instructions on the Github page.
+
+		2. REGISTER YOUR NEWLY MINTED VALIDATOR IN THE AYA BLOCKCHAIN
+		
+		All the necessary data and commands are saved in a file "commands.txt", the file can be located in <your home directory>/earthnode_installer/ 
+		
+		EOM
+		)	
+
 		final_msg=$(cat <<- EOM
 		CONGRATULATIONS!!!!!!
 
@@ -767,10 +790,11 @@ EOF
 		EOM
 		)	
 		
-		zenity --info --title "Info Message" --text "$final_msg";	
+		zenity --info --title "Info Message" --text "$final_msg_screen";	
 
 
-		zenity --info --title "Info Message" --width 500 --height 200 --text "Incase you missed to save the data and commands, they are saved in  \n\n Command.txt file in earthnode_installer folder in the home directory";	
+		zenity --info --title "Info Message" --width 500 --height 200 --text "Necessqary data and commands are saved in  \n\n Command.txt file in \"earthnode_installer folder\" in the home directory";	
+
 		echo "$final_msg">commands.txt
 
 		echo 100
