@@ -85,5 +85,5 @@ For this script to work, a X11 server is necessary to be running on client machi
     This can be done by going to WM Discord and downloading the Chainfollower service package from "public-testnet-announcements" channel. Download the package on your validator host. 
     
     b. REGISTER YOUR NEWLY MINTED VALIDATOR IN THE AYA BLOCKCHAIN
-    1. go to "<your home directory>/earthnode_installer" and open the file "commands.txt". you will need those commands and data to register the validator node into the Aya blockchain.
+    1. go to "<your_home_directory>/earthnode_installer" and open the file "commands.txt". you will need those commands and data to register the validator node into the Aya blockchain.
     2. Go to John Kelly's guide here https://nodebasewm.github.io/docs/tutorials/validatornodemanual/ and follow from Step 30.
