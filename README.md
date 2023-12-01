@@ -78,6 +78,15 @@ For this script to work, a X11 server is necessary to be running on client machi
         rm ayaview.zip
        ./ayaview
 
-7. ***IMPORTANT***:Once Validaror node is installed, follow the steps written in the final screen of this installation process. In case you forgot to copy the steps, the steps are saved in cd ~/earthnode_installer/ folder of your home directory. The file name is "commands.txt". you will need those commands and data to register the validator node into the Aya blockchain.
+7. ***IMPORTANT***:Once Validaror node is installed, go to "<your home directory>/earthnode_installer" and open the file "commands.txt". you will need those commands and data to register the validator node into the Aya blockchain.
+
+   a. INSTALL CHAIN FOLLOWER SERVICE
+
+    This can be done by going to WM Discord and downloading the Chainfollower service package from "public-testnet-announcements" channel. Download the package on your validator host. 
+    
+    b. REGISTER YOUR NEWLY MINTED VALIDATOR IN THE AYA BLOCKCHAIN
+    
+    Go to John Kelly's guide here https://nodebasewm.github.io/docs/tutorials/validatornodemanual/ and follow from Step 30.
+
 
    
