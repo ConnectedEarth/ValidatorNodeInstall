@@ -732,26 +732,26 @@ EOF
 
 		final_msg_screen=$(cat <<- EOM
 
-		CONGRATULATIONS!!!!!!
+    CONGRATULATIONS!!!!!!
 
-		Your Validator node is now up and running. You can check the status of your validator node by using the following command:
+    Your Validator node is now up and running. You can check the status of your validator node by using the following command:
 
-		"sudo systemctl status cosmovisor.service"
+    "sudo systemctl status cosmovisor.service"
 
-		:-) FINAL STEPS YOU NEED TO MANUALLY (COPY THE COMMANDS BEFORE YOU HIT "OK"
+    :-) FINAL STEPS YOU NEED TO MANUALLY (COPY THE COMMANDS BEFORE YOU HIT "OK"
 
-		1. INSTALL CHAIN FOLLOWER SERVICE
+    1. INSTALL CHAIN FOLLOWER SERVICE
 
-		This can be done by going to WM Discord and download the Chainfollower service package from "public-testnet-announcements" channel. Download the package on your validator host. 
+    This can be done by going to WM Discord and download the Chainfollower service package from "public-testnet-announcements" channel. Download the package on your validator host.
 
-		Detailed instructions on the Github page.
+    Detailed instructions on the Github page.
 
-		2. REGISTER YOUR NEWLY MINTED VALIDATOR IN THE AYA BLOCKCHAIN
-		
-		All the necessary data and commands are saved in a file "commands.txt", the file can be located in <your home directory>/earthnode_installer/ 
-		
-		EOM
-		)	
+    2. REGISTER YOUR NEWLY MINTED VALIDATOR IN THE AYA BLOCKCHAIN
+
+    All the necessary data and commands are saved in a file "commands.txt", the file can be located in <your home directory>/earthnode_installer/
+
+EOM
+)
 
 		final_msg=$(cat <<- EOM
 		CONGRATULATIONS!!!!!!
