@@ -1,9 +1,8 @@
 # ValidatorNodeInstall
 Disclaimer: No warranty, please use at your own risk. 
 
-https://youtu.be/jmRj9po0zCU
-
 Video Guide:
+https://youtu.be/jmRj9po0zCU
 
 This script is based on John Kelly's and Nico Vervoben's  work that can be found here:
   
